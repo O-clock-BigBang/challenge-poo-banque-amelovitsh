@@ -5,10 +5,19 @@
 class Client
 {
 /* Attributs */
-    private $CIN;
+    private $cin;
     private $firstName;
     private $lastName;
     private $phone;
+
+     //*Définir un constructeur permettant d’initialiser tous les attributs
+    public function __construct($newcin, $newfirstName, $newlastName = '', $newphone = '')
+    {
+        $this->setCin($newcin);
+        $this->setFirstName($newfirstName);
+        $this->setLastName($newlastName);
+        $this->setPhone($newphone);
+    }
 
 
     // * Définir à l’aide des propriétés les méthodes d’accès aux différents attributs de la classe.
