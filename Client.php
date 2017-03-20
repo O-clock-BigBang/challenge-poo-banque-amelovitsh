@@ -123,4 +123,12 @@ class Client
     return $this;
 
     }
+
+    public function getHTMLData()
+    {
+        $display = "<p> CIN : " . $this->cin . "</p>";
+        $display .= "<p> Nom complet : " . $this->firstName . " " . $this->lastName . "</p>";
+        $display .= "<p> Phone : " . $this->phone . "</p>";
+        return $display;
+    }
 }
