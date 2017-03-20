@@ -11,7 +11,7 @@ class Client
     private $phone;
 
      //*Définir un constructeur permettant d’initialiser tous les attributs
-    public function __construct($newcin, $newfirstName, $newlastName = '', $newphone = '')
+    public function __construct($newcin ='', $newfirstName ='', $newlastName = '', $newphone = '')
     {
         $this->setCin($newcin);
         $this->setFirstName($newfirstName);
