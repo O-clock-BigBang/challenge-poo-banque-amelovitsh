@@ -124,7 +124,7 @@ class Client
 
     }
 
-    public function getHTMLData()
+    public function Afficher()
     {
         $display = "<p> CIN : " . $this->cin . "</p>";
         $display .= "<p> Nom complet : " . $this->firstName . " " . $this->lastName . "</p>";
